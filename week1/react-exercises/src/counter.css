@@ -1,0 +1,24 @@
+.counter {
+  width: 100%;
+  margin: auto;
+  border: 1px solid black;
+  background-color: rgba(71, 68, 68, 0.300);
+}
+
+.btn {
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  font-size: large;
+  margin: 30px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.higher {
+  font-size: large;
+  padding: 30px;
+  color: brown;
+}

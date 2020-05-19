@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.guarantee {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-content: space-around;
+  background-color: rgba(71, 68, 68, 0.3);
+}
+
+.guaranteeCard {
+  width: 25%;
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.exercise {
+  border: 1px solid black;
+  background-color: #981530;
+  color: white;
+  width: 60%;
+  margin: 30px auto;
+}
