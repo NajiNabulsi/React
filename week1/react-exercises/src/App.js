@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import HobbyList from "./HobbyList";
 import Guarantee from "./Guarantee";
 import Counter from "./Counter";
+import customerServiceInfo from "./customerService.js";
 
 function App({ hobbies, imgSrc, title, description }) {
   return (
@@ -14,26 +14,21 @@ function App({ hobbies, imgSrc, title, description }) {
       <div className="exercise">Exercise 2: Perfect customer service!</div>
 
       <div className="guarantee">
-        <Guarantee
-          imgSrc="f-delivery.png"
-          title="Free shipping"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum modi optio. Nemo temporibus, qui magnam maiores corporis dolor, quisquam ut perferendis consequuntur doloremque autem hic, accusantium quis velit! Modi?"
-        />
-
-        <Guarantee
-          imgSrc="coin.png"
-          title="100% Money back"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum modi optio. Nemo temporibus, qui magnam maiores corporis dolor, quisquam ut perferendis consequuntur doloremque autem hic, accusantium quis velit! Modi?"
-        />
-
-        <Guarantee
-          imgSrc="chat.png"
-          title="Online support 24/7"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum modi optio. Nemo temporibus, qui magnam maiores corporis dolor, quisquam ut perferendis consequuntur doloremque autem hic, accusantium quis velit! Modi?"
-        />
+        {customerServiceInfo.map((item) => (
+          <Guarantee
+            key={item.title}
+            imgSrc={item.imgSrc}
+            alt={item.title}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
       </div>
+
       <div className="exercise">Exercise 3: It's higher than 10!</div>
+
       <Counter />
+
       <div className="exercise">End of the homework</div>
     </div>
   );

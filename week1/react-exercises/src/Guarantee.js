@@ -1,9 +1,9 @@
 import React from "react";
 
-function Guarantee({ imgSrc, title, description }) {
+function Guarantee({ imgSrc, alt, title, description }) {
   return (
     <div className="guaranteeCard">
-      <img src={imgSrc} />
+      <img src={imgSrc} alt={alt}/>
       <h1>{title}</h1>
       <p>{description}</p>
     </div>
