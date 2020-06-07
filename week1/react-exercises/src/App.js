@@ -14,9 +14,9 @@ function App({ hobbies, imgSrc, title, description }) {
       <div className="exercise">Exercise 2: Perfect customer service!</div>
 
       <div className="guarantee">
-        {customerServiceInfo.map((item) => (
+        {customerServiceInfo.map((item,i) => (
           <Guarantee
-            key={item.title}
+            key={i}
             imgSrc={item.imgSrc}
             alt={item.title}
             title={item.title}

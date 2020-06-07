@@ -1,3 +1,3 @@
-const hobbies = ['Surfing', 'Rock climbing', 'Mountain biking', 'Breakdancing'];
+ const hobbies = ['Surfing', 'Rock climbing', 'Mountain biking', 'Breakdancing'];
 
 export default hobbies;

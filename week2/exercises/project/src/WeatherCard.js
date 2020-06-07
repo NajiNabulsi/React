@@ -63,9 +63,9 @@ const WeatherCard = () => {
   };
 
   return (
-    <div onLoad={getWeather}>
+    <div>
       <Form onSubmit={getSearch} onChange={getCityName} value={search} />
-      {isLoding && <p className="loding">Please wait LODING....</p>}
+      {isLoding && <p className="loding">Please wait LOADING....</p>}
 
       {hasErr ? (
         <p className="err" role="alert">
